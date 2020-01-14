@@ -1,0 +1,41 @@
+<%-include("./partials/header.ejs")%>
+<div class="container-fluid text-center text-color-white mt-0" style="background-color: blue;">
+    <div class="row">
+        <h2>Coming Soon ...</h2>
+        <h3>For Now we are collecting documents. So upload what you've got</h3>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-3">
+
+                </div>
+                <div class="col-sm-6">
+                    <form action="/documents" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="document[title]" id="" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="document[author]" id="" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="document[url]" id="" placeholder="Upload image">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="document[origin]" id=""placeholder="Country of origin">
+                        </div>
+                        
+                        
+                        <button class="submit btn-lg btn-success" type="submit">Upload</button>
+                        </form>
+                </div>
+                <div class="col-sm-3">
+                    
+                </div>
+            </div>
+            <div>
+               
+            </div>
+            
+        </div>
+        
+    </div>
+</div>

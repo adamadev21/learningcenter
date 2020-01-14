@@ -1,0 +1,13 @@
+
+   <% blogs.forEach(function(blog){%>
+      <h2>
+       <%= blog.name%> is my friend!
+      </h2> 
+      <h3>He is from <%= blog.country%></h3>
+  <% })%>
+    <h1><a href="#">Add a new friend</a></h1>
+    <form action="/courses" method="POST">
+        <input type="text" name="blog[name]" id="" placeholder="Enter FRIEND NAME">
+        <input type="text" name="blog[country]" id="" placeholder="Enter FRIEND NAME"><button>Add</button>
+    </form>
+

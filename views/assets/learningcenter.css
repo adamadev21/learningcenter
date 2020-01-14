@@ -1,0 +1,103 @@
+.best-color{
+    background-color: white;
+}
+ #navbar-brand{
+    color: darkblue;
+    font-weight: 600;
+    
+ }
+ #icon{
+     font-family: cursive;
+     font-size: xx-large;
+     font-weight: bold;
+     color:blue;
+ }
+ .title{
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     ;
+ }
+ .btn-orange{
+     background-color: darkgoldenrod;
+ }
+
+.bottom{
+    background-color: blueviolet;
+    height: 300px;
+    margin: auto;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.text-color-white{
+    color:white;
+}
+nav li{
+    color: blueviolet;
+}
+    
+body{
+    background-color: white !important;
+}
+.bg-blue{
+    color: rgb(4, 24, 207);
+    font-weight: 800;
+    line-height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+h4 a{
+    border-bottom: darkblue 5px solid;
+    color: darkblue;
+}
+.my-color{
+    font-size: 13px;
+    background: #2255ee!important;
+    border-color: #840029;
+    padding: 6px 10px;
+}
+.box{
+    display: flex;
+    flex-direction: row; ;
+}
+.title {
+    height: 40px;;
+    font-size: 26px;
+    font-weight: 700;
+  
+    hyphens: auto;
+    color: white;
+}
+.bordered{
+    margin-left: 1px;
+    border-left: 5px solid darkblue !important;
+}
+.right{
+    margin: auto 10px;
+    width: max-content;
+    color: blue;
+
+}
+#signup{
+    max-height: fit-content;
+}
+#bottom{
+    background-color: purple;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1em;
+    border-top: 2px red solid;
+}
+.centered{
+    margin: 40px;
+    justify-content: center;
+}
+.text-blue{
+    color:blue;
+    font-weight: bolder !important;
+    font-size: large !important;
+}
+.navbar-collapse .navbar-nav .nav-item ul{
+    background-color: rgb(15, 103, 218) !important;
+    color: white !important;
+}
