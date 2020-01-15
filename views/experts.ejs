@@ -1,0 +1,30 @@
+<%-include("./partials/header")%>
+<div class="container" id="margin-top" style="text-align:left;">
+    <form action="/askexperts" method="POST">
+        <input type="text" class="form-control" name="question[title]" id="" placeholder="Title"> <br>
+        <textarea name="question[text]"id="" cols="120" rows="8" placeholder="Please enter question here ...." class="form-control"></textarea>
+        <br><button type="submit" class="btn btn-lg btn-success">Post</button>
+        </form>
+    <div class="row">
+        <div class="col-sm-6">
+           
+<!-- HTML Codes by Code-Generator.net -->
+
+           
+    <%questions.forEach(function(question){%>
+        <h3><a href="">
+            <%=question.title%>
+        </a></h3>
+        <p><%=question.text%></p>
+        
+    <% })%>
+        
+        </div>
+        <div class="col-sm-6">
+        </div>
+    </div>
+        
+           
+
+</div>
+<%-include("./partials/footer")%>

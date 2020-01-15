@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "learningcenter.js"
-  
   },
   "author": "Adama Sawadogo",
   "license": "ISC",
@@ -14,6 +13,7 @@
     "express-sanitizer": "^1.0.5",
     "method-override": "^3.0.0",
     "mongodb": "^3.4.1",
-    "mongoose": "^5.8.6"
+    "mongoose": "^5.8.6",
+    "partials": "^0.1.0"
   }
 }

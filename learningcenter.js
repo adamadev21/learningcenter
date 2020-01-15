@@ -7,7 +7,8 @@ var express                =require("express"),
     passport                =require("passport"),
     request                 =require("request"),
    Document                 =require("./models/documents")
-    User                    =require("./models/user")
+    Question                =require("./models/question")
+   User                    =require("./models/user")
     LocalStrategy           =require("passport-local"),
     passportLocalMongoose   =require("passport-local-mongoose")
 
@@ -15,7 +16,7 @@ var express                =require("express"),
 
 //=====================================================//
 //MONGOOSE CONFIG
-
+mongoose.set('useCreateIndex', true)
 mongoose.connect("mongodb://localhost/learning_center_db",{
     useNewUrlParser:true,
     useUnifiedTopology:true
@@ -62,9 +63,6 @@ app.post("/signup", function(req,res){
         });
     });
 });
-app.get("/secret", isLoggedIn, function(req,res){
-    res.render("secret")
-});
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){
         return next();
@@ -108,7 +106,26 @@ Document.create(req.body.document, function(err,newDocument){
 //redirect
    
 })
-
+app.get("/askexperts", function(req,res){
+    Question.find({}, function(err,questions){
+        if(err){
+            console.log("errer")
+        }else{
+            res.render("experts", {questions:questions})
+        }
+    });
+});
+app.post("/askexperts",function(req,res){
+    //create new data
+    Question.create(req.body.question, function(err,newQuestion){
+        if(err){
+            res.send(err);
+        }else {
+           res.redirect("/askexperts")}
+    });
+    //redirect
+       
+    })
 port=process.env.PORT ||3000
 app.listen(port,function (){
     console.log("Server has Started!")
