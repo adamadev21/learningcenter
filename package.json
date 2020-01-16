@@ -1,5 +1,5 @@
 {
-  "name": "app.js",
+  "name": "learningcenter.js",
   "version": "1.0.0",
   "description": "MOngoData",
   "main": "app.js",
@@ -15,5 +15,6 @@
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.6",
     "partials": "^0.1.0"
-  }
+  },
+  "devDependencies": {}
 }
