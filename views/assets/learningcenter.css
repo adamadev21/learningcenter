@@ -104,3 +104,14 @@ h4 a{
 #margin-top{
     margin-top: 80px;
 }
+.container .row .skyblue{
+    background-color: blue !important;
+    color: cornsilk !important;
+}
+.skyblue a{
+    color: cornsilk !important;
+}
+.border{
+    border: cornsilk 2px solid;
+    margin-top: 2px;
+}
