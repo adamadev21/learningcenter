@@ -8,7 +8,7 @@
   "main": "learningcenter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " node learningcenter"
+    "start": " node learningcenter.js"
   },
   "author": "Adama Sawadogo",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "partials": "^0.1.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "request": "^2.88.0",
     "router": "^1.3.3"
   },
   "devDependencies": {}
