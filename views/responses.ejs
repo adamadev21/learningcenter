@@ -1,0 +1,21 @@
+<%-include("./partials/header.ejs")%>
+
+<div class="container" id="margin-top">
+    <h1>Welcome to the comment page</h1>
+    
+    <form action="/askexperts/<%=question._id%>/reply" method="POST">
+        <div class="form-group">
+            <textarea class="form-control" name="response[text]" id="" cols="90" rows="6" placeholder="Enter your reply here"></textarea>
+
+        </div>
+       
+    <button class="btn btn-success" type="submit">Reply</button>
+    </form>
+    <h2><a>Replies from experts on the subject</a></h2>
+    <%question.responses.forEach(function(response){%>
+        <p>
+     <%= response.text%>
+          
+        </p>
+     <%})%>
+</div>

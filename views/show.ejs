@@ -1,0 +1,22 @@
+<%-include("./partials/header.ejs")%>
+<div class="container">
+    <h1>Hey here is the show template!</h1>
+
+    <h2><strong><%=questions.title%></strong></h2>
+    <p><%=questions.text%></p>
+    <div>
+        <form action="">
+            <button class="btn btn-warning">Edit</button>
+        </form>
+        <form method="POST" action="/askexperts/<%questions._id%>?_method=DELETE">
+            <button class="btn btn-danger">
+                Delete
+            </button>
+        </form>
+        <form>
+            <button type="submit" class="btn btn-success">Reply</button>
+        </form>
+    </div> 
+   
+</div>
+
